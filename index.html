@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工程性写作宣言</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0e14;
+  color: #5c6878;
+  font-family: 'Menlo', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 13.5px;
+  line-height: 1.85;
+  padding: 40px 32px 120px;
+}
+.t { max-width: 800px; margin: 0 auto; }
+pre { font: inherit; white-space: pre-wrap; word-wrap: break-word; }
+
+/* prompt */
+.p { color: #3d9a5f; font-weight: 500; margin-bottom: 2px; }
+.p .d { color: #6bbd7b; }
+.p .f { color: #c9a456; }
+
+/* the only thing that glows: poem-hanzi */
+.hz { color: #e2c26c; text-shadow: 0 0 20px rgba(226,194,108,0.08); }
+
+/* code block */
+.code { margin: 6px 0 36px; }
+
+/* run prompt */
+.run { margin-top: 4px; }
+.enter-key {
+  display: inline-block;
+  border: 1px solid #2a3040;
+  border-radius: 4px;
+  padding: 0 7px;
+  font-size: 11px;
+  color: #4a5568;
+  margin-left: 10px;
+  background: #111820;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 1.7;
+}
+.enter-key:hover { border-color: #3d5a3f; color: #6bbd7b; }
+.cursor-blink {
+  display: inline-block;
+  width: 8px; height: 16px;
+  background: #6bbd7b;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* output */
+.output { margin-top: 6px; color: #8b949e; }
+.output .err { color: #e05561; }
+.output .tr { color: #5c6370; }
+
+.hidden { display: none; }
+.done .enter-key, .done .cursor-blink { display: none; }
+
+@media (max-width: 600px) {
+  body { font-size: 12px; padding: 20px 14px 80px; }
+}
+</style>
+</head>
+<body>
+<div class="t">
+
+<div class="p"><span class="d">$ </span>cat <span class="f">工程性写作宣言.py</span></div>
+
+<pre class="code"># <span class="hz">工程性写作宣言</span>.py
+
+<span class="hz">定义</span> = <span class="hz">工程性写作</span> = "<span class="hz">计算公式</span>，<span class="hz">建模出情感</span>"
+
+print(<span class="hz">定义</span>[5:7], "<span class="hz">哲学和历史</span>")
+<span class="hz">阅读</span> = "<span class="hz">让你去看到一半</span>"
+<span class="hz">工程性写作</span>; print(<span class="hz">定义</span>[:4], <span class="hz">阅读</span>)
+print(<span class="hz">工程性写作</span>[5:], "<span class="hz">用形式系统写诗</span>")
+
+<span class="hz">写</span>, <span class="hz">无</span>, <span class="hz">也是</span>, <span class="hz">一种</span>, <span class="hz">经历</span>, _ = print, len, next, iter, iter, print
+<span class="hz">用套路写诗</span> = <span class="hz">一种</span>("<span class="hz">风花雪月</span>")
+<span class="hz">不过</span> = next
+<span class="hz">诗的命运</span> = <span class="hz">经历</span>("<span class="hz">看听读想</span>")
+_(<span class="hz">没了</span> := (<span class="hz">意义</span> := ""))
+
+while <span class="hz">别人</span> := <span class="hz">不过</span>(<span class="hz">用套路写诗</span>
+    # , <span class="hz">无</span>(<span class="hz">意义</span>)
+    ):
+    <span class="hz">我</span> = <span class="hz">这样</span> = "<span class="hz">写的诗</span>" "<span class="hz">没有人回应</span>——" [:
+        <span class="hz">无</span>(f"{<span class="hz">意义</span>=}，")] + <span class="hz">也是</span>(<span class="hz">诗的命运</span>)
+
+    <span class="hz">写</span>(f"{<span class="hz">这样</span>}<span class="hz">的模型</span>" [:3] , "<span class="hz">就是宣言</span>")
+    _(f"<span class="hz">和</span>{<span class="hz">别人</span>}<span class="hz">的诗不兼容</span>")
+    _(f"<span class="hz">只是</span>{<span class="hz">我</span>}<span class="hz">懂</span>") # (:3)
+
+    try:
+        <span class="hz">没了</span>; _(<span class="hz">我</span> := <span class="hz">想要的语言</span>)
+        <span class="hz">做不成代码诗</span>
+        <span class="hz">做不成限制性写作</span>
+        <span class="hz">做不成生成诗</span>
+        <span class="hz">每一层都妥协</span>, <span class="hz">工程性写作</span>
+
+        <span class="hz">长长地写</span> / <span class="hz">常常地写</span>
+        <span class="hz">找不到答案</span>
+        <span class="hz">没有回音</span>, <span class="hz">不能抵达这里</span>
+
+    except NameError as <span class="hz">仍要写</span>:
+        _("<span class="hz">得试试</span>，<span class="hz">因为</span>", <span class="hz">仍要写</span>)
+        _("<span class="hz">或许</span>", <span class="hz">这样</span>, <span class="hz">阅读</span>[:<span class="hz">无</span>("<span class="hz">法理解</span>")],
+            <span class="hz">我</span>[-<span class="hz">无</span>("<span class="hz">意</span>"):]); <span class="hz">这样</span>
+        _(<span class="hz">可诗总不能没有</span> := <span class="hz">意义</span>)
+
+    # TODO: <span class="hz">找几个人</span>，<span class="hz">办个杂志</span>
+
+# 2026.4.16 <span class="hz">慎谞居士</span>
+# 2026.4.19 <span class="hz">改定</span></pre>
+
+<div class="p run" id="runLine"><span class="d">$ </span>python3.14  <span class="f">工程性写作宣言.py</span><span class="enter-key" id="enterKey">↵ Enter</span><span class="cursor-blink"></span></div>
+
+<pre class="output hidden" id="output">
+<span class="hz">建模</span> <span class="hz">哲学和历史</span>
+<span class="hz">计算公式</span> <span class="hz">让你去看到一半</span>
+<span class="hz">建模出情感</span> <span class="hz">用形式系统写诗</span>
+
+<span class="hz">写的诗</span> <span class="hz">就是宣言</span>
+<span class="hz">和风的诗不兼容</span>
+<span class="hz">只是写的诗没有人看懂</span>
+<span class="hz">得试试</span>，<span class="hz">因为</span> name '<span class="hz">想要的语言</span>' is not defined
+<span class="hz">或许</span> <span class="hz">写的诗没有人看</span> <span class="hz">让你去</span> <span class="hz">看</span>
+
+<span class="hz">写的诗</span> <span class="hz">就是宣言</span>
+<span class="hz">和花的诗不兼容</span>
+<span class="hz">只是写的诗没有人听懂</span>
+<span class="hz">得试试</span>，<span class="hz">因为</span> name '<span class="hz">想要的语言</span>' is not defined
+<span class="hz">或许</span> <span class="hz">写的诗没有人听</span> <span class="hz">让你去</span> <span class="hz">听</span>
+
+<span class="hz">写的诗</span> <span class="hz">就是宣言</span>
+<span class="hz">和雪的诗不兼容</span>
+<span class="hz">只是写的诗没有人读懂</span>
+<span class="hz">得试试</span>，<span class="hz">因为</span> name '<span class="hz">想要的语言</span>' is not defined
+<span class="hz">或许</span> <span class="hz">写的诗没有人读</span> <span class="hz">让你去</span> <span class="hz">读</span>
+
+<span class="hz">写的诗</span> <span class="hz">就是宣言</span>
+<span class="hz">和月的诗不兼容</span>
+<span class="hz">只是写的诗没有人想懂</span>
+<span class="hz">得试试</span>，<span class="hz">因为</span> name '<span class="hz">想要的语言</span>' is not defined
+<span class="hz">或许</span> <span class="hz">写的诗没有人想</span> <span class="hz">让你去</span> <span class="hz">想</span>
+
+<span class="err">Traceback (most recent call last):</span>
+<span class="tr">  File "<span class="hz">工程性写作宣言</span>.py", line 16, in &lt;module&gt;</span>
+<span class="tr">    while <span class="hz">别人</span> := <span class="hz">不过</span>(<span class="hz">用套路写诗</span></span>
+<span class="tr">                  ~~~~^^^^^^^^^^^</span>
+<span class="tr">        # , <span class="hz">无</span>(<span class="hz">意义</span>)</span>
+<span class="tr">        ^^^^^^^^^^^^</span>
+<span class="tr">        ):</span>
+<span class="tr">        ^</span>
+<span class="err">StopIteration</span>
+</pre>
+
+</div>
+
+<script>
+var done = false;
+function run() {
+  if (done) return;
+  done = true;
+  document.getElementById('output').classList.remove('hidden');
+  document.getElementById('runLine').classList.add('done');
+  setTimeout(function(){ window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}); }, 50);
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Enter') run(); });
+document.getElementById('enterKey').addEventListener('click', run);
+</script>
+</body>
+</html>
